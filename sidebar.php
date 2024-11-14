@@ -38,7 +38,7 @@
                 </a>
                 <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">User Management</a>
+                        <a href="userManagement.php" class="sidebar-link">User Management</a>
                     </li>
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link">Register</a>
