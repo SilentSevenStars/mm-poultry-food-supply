@@ -518,6 +518,8 @@
             </a>
         </div>
     </div>
+
+    <!-- javasxript -->
     <script src="asset/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="asset/js/script.js"></script>
     <script src="asset/js/jquery.js"></script>

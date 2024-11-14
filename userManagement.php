@@ -21,13 +21,12 @@
                 <div class="container-fluid">
                     <div class="card border-0">
                         <div class="card-header">
-                            <h5 class="card-title">
-                                Users Table
-                            </h5>
-                            <h6 class="card-subtitle text-muted">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus,
-                                necessitatibus reprehenderit itaque!
-                            </h6>
+                            <div class="row">
+                                <h5 class="card-title col-md-10">
+                                    Users Table
+                                </h5>
+                                <a href="" class="btn btn-primary col-md-2">Add</a>
+                            </div>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
