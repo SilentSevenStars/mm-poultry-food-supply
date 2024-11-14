@@ -2,14 +2,11 @@
     <!-- Content For Sidebar -->
     <div class="h-100">
         <div class="sidebar-logo">
-            <a href="#">CodzSword</a>
+            <a href="#">MM Poultry</a>
         </div>
         <ul class="sidebar-nav">
-            <li class="sidebar-header">
-                Admin Elements
-            </li>
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link">
+                <a href="index.php" class="sidebar-link">
                     <i class="fa-solid fa-list pe-2"></i>
                     Dashboard
                 </a>
@@ -17,32 +14,21 @@
             <li class="sidebar-item">
                 <a href="#" class="sidebar-link collapsed" data-bs-target="#pages" data-bs-toggle="collapse"
                     aria-expanded="false"><i class="fa-solid fa-file-lines pe-2"></i>
-                    Pages
+                    Product
                 </a>
                 <ul id="pages" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Page 1</a>
+                        <a href="category.php" class="sidebar-link">Category</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Page 2</a>
+                        <a href="product.php" class="sidebar-link">Product</a>
                     </li>
                 </ul>
             </li>
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link collapsed" data-bs-target="#posts" data-bs-toggle="collapse"
-                    aria-expanded="false"><i class="fa-solid fa-sliders pe-2"></i>
-                    Posts
+                <a href="transactionHistory.php" class="sidebar-link collapsed"><i class="fa-solid fa-sliders pe-2"></i>
+                    Transaction
                 </a>
-                <ul id="posts" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Post 1</a>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Post 2</a>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Post 3</a>
-                    </li>
                 </ul>
             </li>
             <li class="sidebar-item">
@@ -52,17 +38,17 @@
                 </a>
                 <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Login</a>
+                        <a href="#" class="sidebar-link">User Management</a>
                     </li>
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link">Register</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Forgot Password</a>
+                        <a href="#" class="sidebar-link">Change Password</a>
                     </li>
                 </ul>
             </li>
-            <li class="sidebar-header">
+            <!-- <li class="sidebar-header">
                 Multi Level Menu
             </li>
             <li class="sidebar-item">
@@ -84,7 +70,7 @@
                         </ul>
                     </li>
                 </ul>
-            </li>
+            </li> -->
         </ul>
     </div>
 </aside>
