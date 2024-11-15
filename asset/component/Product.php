@@ -82,7 +82,7 @@
             }
         }
         public function deleteProduct($id){
-            $sql = "DELETE FROM $this->table WHERE id = '$id'";
+            $sql = "DELETE FROM $this->table WHERE productID = '$id'";
             $query = $this->conn->query($sql);
             if($query){
                 return true;

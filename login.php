@@ -1,3 +1,25 @@
+<?php
+    session_start();
+    require 'asset/component/Show.php';
+    require 'asset/component/Connection.php';
+    require 'asset/component/User.php';
+
+    $user = new User($conn);
+
+    if(isset($_POST['logIn'])){
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+
+        $auth = $user->auth($email, $password);
+        if($auth){
+            header("Location: index.php");
+        } else {
+            echo '<div class="alert alert-danger" role="alert">Invalid Email or Password</div>';
+        }
+
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
 
@@ -77,16 +99,16 @@
                     <h2>Log In to</h2>
                     <h3>MM POULTRY</h3>
                     <p>Food Supply</p>
-                    <form>
+                    <form action="" method="post">
                         <div class="mb-3">
-                            <label for="username" class="form-label text-start w-100">Username</label>
-                            <input type="text" id="username" class="form-control form-control-lg">
+                            <label for="email" class="form-label text-start w-100">Email</label>
+                            <input type="text" name="email" id="Email" class="form-control form-control-lg">
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label text-start w-100">Password</label>
-                            <input type="password" id="password" class="form-control form-control-lg">
+                            <input type="password" name="password" id="password" class="form-control form-control-lg">
                         </div>
-                        <button type="submit" class="btn btn-lg" style="width: 60%; padding: 10px 0;">LOG IN</button>
+                        <button type="submit" class="btn btn-lg" name="logIn" value="Login" style="width: 60%; padding: 10px 0;">LOG IN</button>
                         <div class="forgot-password">
                             <a href="#" class="text-white">Forgot password? Click here</a>
                         </div>
